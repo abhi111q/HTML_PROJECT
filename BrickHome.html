@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Brick Breaker</title>
+</head>
+
+<style>
+header{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em .5em; 
+    background: white;
+    top: 0;
+}
+
+:root{
+    --transition_ease : all .3s cubic-bezier(0.65, 0.01, 0.62, 0.92) 0s;
+    --pink : #f857a6;
+    --peach: #ff5858;
+    --large-shadow: 0 10px 30px -10px #ff585869;
+    --small-shadow: 0 2px 5px #ff585889;
+    --black75 : rgba(0,0,0,0.75);
+    --black50 : rgba(0,0,0,0.5);
+    --black90 : rgba(0,0,0,0.9);
+    --white25 : rgba(255,255,255, 0.25);
+    --linear-grad : linear-gradient(to right, var(--pink), var(--peach));
+}
+
+.logo-text{
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    color: var(--black90);
+}
+
+.fullHeader{
+    width: 100vw;
+    margin-top: 0;
+    border-radius: 0;
+}
+
+.play-btn{
+    margin: 1em 0 0;
+    display: block;
+    width: fit-content;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lead{
+    font-size: 20px;
+}
+</style>
+<body>
+    
+    <header class="fullHeader">
+            <a href="#" class="logo-text">Brick Breaker</a>
+        <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container-fluid" style="margin-top: 5em;">
+        <div class="row">
+            <div class="col" style="background-image: url('bouncingBackground.png');max-height: 510px;">
+                    <div class="jumbotron jumbotron-fluid" style="background: transparent;">
+                            <div class="container">
+                                <h1 class="display-3"> <span style="color: white;">Brick Breaker</span></h1>
+                                <br>
+                                <br>
+                                <hr class="my-2">
+                                <p class="lead">
+                                    <a class="btn btn-primary btn-lg" href="index.html" role="button">Jumbo action name</a>
+                                </p>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-4">
+                    <div class="jumbotron jumbotron-fluid" style="background-color: tomato;">
+                            <div class="container">
+                                <p class="lead">About Brick Breaker</p>
+                                <hr class="my-2">
+                                <p>Brick Breaker is a breakout clone which the player must smash a wall of bricks by deflecting a bouncing ball with a paddle. The paddle may move horizontally and is controlled with the System arrow Keys. </p>
+                                <a href="#" class="play-btn">Read more ></a>
+                            </div>
+                        </div>
+                        <div class="jumbotron jumbotron-fluid" style="background-color: tomato;">
+                                <div class="container">
+                                    <p class="lead">Rules</p>
+                                    <hr class="my-2">
+                                    <p>1.Use only Left arrow key to move Left <br> 2. Use only Right arrow key to move Right <br> 3.The player gets 3 lives to start with. <br> 4. A life is lost if the ball hits the bottom of the screen.</p>
+                                </div>
+                            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
