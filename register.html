@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Now!</title>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+
+	<!-- Google sign in api -->
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="../js/register.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="homepage-link">
+			<a href="../main.html">Back to home</a>
+		</div>
+		<div class="outer-box">
+			<div class="left-side">
+				<p class="heading">
+					We build games with passion and enthusiasm.
+				</p>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				</p>
+
+				<p class="text login-text">Already have an account? <span class="bold">Login</span></p>
+
+				<div class="signUp-buttons">
+					<button class="btn text">Sign in with Google</button>
+					<button class="btn text">Sign in with facebook</button>
+					<p class="signUp-terms">
+					By signing in, you agree to our<br><span>Terms and Services.</span>
+				</p>
+				</div>
+
+				
+			</div>
+			<div class="right-side">
+				<p class="sub-heading">
+					Sign up now and gain access to millions of games.
+				</p>
+
+				<form id="registerForm" class="register-form" method="post" action="main.html" autocomplete>
+					<label for="name" class="text">Name</label><input type="name" id="name" placeholder="Enter your name...">
+					<label for="email" class="text">Email</label><input type="email" id="email" placeholder="joe@example.com" required>
+					<label for="password" class="text">Password</label><input type="password" id="pswrd" placeholder="let's make it private." required>
+					<label for="confirm-password" class="text">Confirm password</label><input type="password" id="cpswrd" placeholder="Enter it again." required>
+					<button type="submit" class="btn text">Sign Up</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</body>
+</html>

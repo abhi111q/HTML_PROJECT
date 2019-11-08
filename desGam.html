@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   	<!-- Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<style type="text/css">
+		body{
+  			background-image: url("i1.jpg");
+  			background-position: center;
+  			background-size: cover;
+  			background-repeat: no-repeat;
+  			color: white;
+		}
+		div{
+			padding: 10px;
+		}
+		div div{
+			padding-left: 18px;
+		}
+		#Larg{
+			font-weight: bold;
+		}
+		#h1{
+			font-size: 60px;
+			font-weight: bold;
+		}
+		#h2{
+			font-size: 45px;
+		}
+		h2{
+			font-size: 44px;
+		}
+		p{
+		  font-family: verdana;
+		  font-size: 40px;
+		}
+		.increase{
+			padding: 7px 30px 7px 30px;
+		}
+	</style>
+</head>
+<body style="background-color: #C0C0C0;">
+	<div>
+		<center><span id="h1">Chess</span><span id="h2">-A brain Storming Game</span></center>
+		<div>
+			<h2><u>Objective</u></h2>
+				<span style="font-size: 30px;">The ultimate aim in the chess game is to deliver a checkmate.</span>
+			<h2><u>Moves</u></h2>
+				<font id="Larg" style="font-size: 38px;">King:</font> <span style="font-size: 30px;">King can move exactly one square horizontally, vertically, or diagonally.</span><br>
+				<font id="Larg" style="font-size: 38px;">Queen:</font><span style="font-size: 30px;"> Queen can move any number of vacant squares diagonally, horizontally, or vertically.</span><br>
+				<font id="Larg" style="font-size: 38px;">Rook:</font> <span style="font-size: 30px;">Rook can move any number of vacant squares vertically or horizontally. It also is moved while castling.</span><br>
+				<font id="Larg" style="font-size: 38px;">Bishop:</font> <span style="font-size: 30px;">Bishop can move any number of vacant squares in any diagonal direction. </span><br>
+				<font id="Larg" style="font-size: 38px;">Knight:</font> <span style="font-size: 30px;">Knight can move one square along any rank or file and then at an angle.</span><br>
+				<font id="Larg" style="font-size: 38px;">Pawns:</font> <span style="font-size: 30px;">Pawns can move forward one square, if that square is unoccupied. If it has not yet moved, the pawn has the option of moving two squares forward provided both squares in front of the pawn are unoccupied.</span><br><br>
+			<button type="button" class="btn btn-primary btn-lg increase" onclick="myFun()"><font size="5">Play</font></button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function myFun(argument) {
+			location.replace("index.html");
+		}
+	</script>
+</body>
+</html>
+

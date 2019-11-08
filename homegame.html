@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+   *{
+    box-sizing: border-box;
+  }
+
+html 
+  {
+      font-family: "Lucida Sans", sans-serif;
+  }
+
+
+
+  @media only screen and (min-width: 768px) 
+{
+  .row
+  {
+     background-color: black;
+     color: #ffffff;
+     padding: 15px;
+   }
+          .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .headnav
+  {
+    width: 70%;
+    font-size: 2vw;
+    font-weight: bold;
+    float: left;
+  }
+  .buttonnav
+  {
+    width: 30%;
+    font-size: 1vw;
+    float: left;
+  }
+  .buttonnav button
+  {
+    font-size: 1.5vw;
+  }
+   .buttonnav a
+  {
+    margin-right: 20px;
+  }
+  .row2
+    {
+      background-color: white;
+      color: #ffffff;
+    }
+
+  .row2::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  .row2col1
+    {
+      width: 49%;
+      float:left;
+      background-image: url('tictac1.jpg');
+      background-size: cover;
+      max-width: 100%;
+      height: 500px;
+      margin-right: 0.5%;
+      margin-top: 0.5%;
+    }
+    .row2col1 .internal
+    {
+      padding-top: 40px;
+      padding-left: 10px;
+      text-align: justify;
+      width: 47%;
+      float: left;
+    }
+
+    .row2col1 h3
+    {
+      padding-left: 10px;
+    }
+
+    #ready
+    {
+      display: none;
+    }
+
+    .pclass
+    {
+      font-style: italic;color: #F8C471;font-size: 1.2vw;
+    }
+
+    
+    .row2col2
+    {
+      padding-top: 25px;
+      text-align: justify;
+      width: 20%;
+      float: left;
+      border: 2px solid red;
+      background-color: pink;
+      margin-top: 0.5%;
+      height: 500px;
+      max-height: 500px;
+     
+    }
+    .row2col2 p
+    {
+      padding right: 10px;
+
+    }
+
+    .row2col2 h1
+    {
+      color: black;
+      padding-left: 27px;
+
+    }
+    
+    .row2col2 p
+    {
+      padding-top: 1px; 
+    }
+
+    .row2col2 div p ul li
+    {
+      font-size: 1.1vw;
+      padding-right: 5px;
+    }
+
+    .row2col3
+    {
+       text-align: justify;
+      width: 30%;
+      float: left;   
+      background-color: #F8C471;
+      color: black;
+      padding-right: 10px;   
+      margin-right: 0.5%; 
+      margin-top: 0.5%;
+      height: 500px;
+      max-height: 500px;
+      overflow: hidden;
+    }
+    .row2col3 h1
+    {
+      padding: 20px;
+    }
+    .row2col3 p ul li
+    {
+      font-size: 1.1vw;
+    }
+  
+    .footer
+    {
+      position: fixed;
+      bottom: 10px;
+      font-size: 1.3vw;
+      width: 100%;
+    }
+  .row3
+    {
+      background-color: white;
+      color: black;
+    }
+  .row3::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+  .row3col1
+  {
+    width: 50%;
+    padding-top: 50px;
+    float: left;
+  }
+
+  .row3col1 input
+  {
+    margin-right: 3%;
+    font-size: 1.2vw;
+  }
+
+  .row3col1 i
+  {
+    font-size: 1.2vw;
+    background-color: yellow;
+    color: black;
+  }
+
+  .row3col3
+  {
+    width: 20%;
+    float: left;
+  }
+  .row3col3 a button
+  {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 10%;
+    background-color: green;
+    color: white;
+    font-size: 2vw;
+  }
+
+  .row3col2
+  {
+    width: 30%;
+    float: left;
+    padding-top: 50px;
+  }
+  .row3col2 p
+  {
+    font-size: 1.2vw;
+    font-weight: bold;
+  }  
+
+}
+
+
+
+  @media only screen and (max-width: 768px) 
+{
+  .row
+  {
+     background-color: black;
+     color: #ffffff;
+     padding: 15px;
+   }
+          .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .headnav
+  {
+    width: 70%;
+    font-size: 2vw;
+    font-weight: bold;
+    float: left;
+  }
+  .buttonnav
+  {
+    width: 30%;
+    font-size: 1vw;
+    float: left;
+  }
+  .buttonnav button
+  {
+    font-size: 1.5vw;
+  }
+   .buttonnav a
+  {
+    margin-right: 20px;
+  }
+  .row2
+    {
+      background-color: white;
+      color: #ffffff;
+    }
+
+  .row2::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  .row2col1
+    {
+      width: 100%;
+      float:left;
+      background-image: url('tictac1.jpg');
+      background-size: cover;
+      max-width: 100%;
+      height: 500px;
+      margin-right: 0.5%;
+      margin-top: 0.5%;
+    }
+    .row2col1 .internal
+    {
+      padding-top: 40px;
+      padding-left: 10px;
+      text-align: justify;
+      width: 47%;
+      float: left;
+    }
+
+    .row2col1 h3
+    {
+      padding-left: 10px;
+    }
+
+    #ready
+    {
+      display: none;
+    }
+
+    .pclass
+    {
+      font-style: italic;color: #F8C471;font-size: 1.2vw;
+    }
+
+    
+    .row2col2
+    {
+      padding-top: 25px;
+      text-align: justify;
+      width: 100%;
+      float: left;
+      border: 2px solid red;
+      background-color: pink;
+      margin-top: 0.5%;
+      height: 500px;
+      max-height: 500px;
+     
+    }
+    .row2col2 p
+    {
+      padding right: 10px;
+
+    }
+
+    .row2col2 h1
+    {
+      color: black;
+      padding-left: 27px;
+
+    }
+    
+    .row2col2 p
+    {
+      padding-top: 1px; 
+    }
+
+    .row2col2 div p ul li
+    {
+      font-size: 1.1vw;
+      padding-right: 5px;
+    }
+
+    .row2col3
+    {
+       text-align: justify;
+      width: 100%;
+      float: left;   
+      background-color: #F8C471;
+      color: black;
+      padding-right: 10px;   
+      margin-right: 0.5%; 
+      margin-top: 0.5%;
+      height: 500px;
+      max-height: 500px;
+      overflow: hidden;
+    }
+    .row2col3 h1
+    {
+      padding: 20px;
+    }
+    .row2col3 p ul li
+    {
+      font-size: 1.1vw;
+    }
+  
+    .footer
+    {
+      position: fixed;
+      bottom: 10px;
+      font-size: 1.3vw;
+      width: 100%;
+    }
+  .row3
+    {
+      background-color: white;
+      color: black;
+    }
+  .row3::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+  .row3col1
+  {
+    width: 100%;
+    padding-top: 50px;
+    float: left;
+  }
+
+  .row3col1 input
+  {
+    margin-right: 3%;
+    font-size: 1.2vw;
+  }
+
+  .row3col1 i
+  {
+    font-size: 1.2vw;
+    background-color: yellow;
+    color: black;
+  }
+
+  .row3col3
+  {
+    width: 100%;
+    float: left;
+  }
+  .row3col3 a button
+  {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 10%;
+    background-color: green;
+    color: white;
+    font-size: 2vw;
+  }
+
+  .row3col2
+  {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+  }
+  .row3col2 p
+  {
+    font-size: 1.2vw;
+    font-weight: bold;
+  }  
+
+}
+
+      </style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body ng-app=""  >
+        <div class="row">
+          <div class="headnav">TIC TAC TOE</div>
+          <div class="buttonnav">
+            <a href="../main.html"><button>HOME</button></a>
+            <a href="main.html"><button>Play</button></a>
+            <a href="#stra"><button>Rules</button></a>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="row2col1" id="intro">
+            <a href="#start" id="ready"><button>Ready</button></a>
+            <br>
+            <br>
+            <h3>William Wordsworth alludes to tic-tac-toe in his The Prelude (1799)</h3>
+            <div class="internal">
+            <h1 >Introduction</h1>
+            <p class="pclass">Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</p>
+            </div>
+          </div>
+          <div id="stra" class="row2col3">
+              <h1>Strategy</h1>
+              <p>
+                <ul>
+                <li>Win: If the player has two in a row, they can place a third to get three in a row.</li><br>
+                <li>Block: If the opponent has two in a row, the player must play the third themselves to block the opponent.</li><br>
+                <li>Fork: Create an opportunity where the player has two ways to win.</li><br>
+                <li>Opposite corner: If the opponent is in the corner, the player plays the opposite corner.</li><br>
+                <li>Empty corner: The player plays in a corner square.</li><br>
+                <li>Empty side: The player plays in a middle square on any of the 4 sides.</li><br>
+                </ul>
+              </p>
+          </div>
+          <div class="row2col2">
+            <div>
+              <h1>Rules</h1>
+              <p>
+                <ul>
+                <li>The game is played on a grid that's 3 squares by 3 squares</li><br>
+                <li>Players take turns putting their marks in empty squares.</li><br>
+                <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li><br>
+                <li>When all 9 squares are full, the game is over.</li><br>
+                </ul>
+              </p>
+            </div>
+            <center><div style="font-size: 1.5vw;padding-top: 40px;padding-left: 20px;">All The Best</div></center>
+          </div>
+        </div>
+
+        <div class="footer">
+          <marquee><strong>Fill the form first to start game, Read above points carefully before starting game. Two player Game, Computer Mode is not active till now. Project Work- Tic Tac Toe Game Designed by Aniket Sharma. </strong></marquee>
+        </div>
+
+        <div id="hid" class="row3" ng-app="">
+          <div class="row3col1">
+                <i>Player1:</i><input type="text" name="pl1" ng-model="pla1" placeholder="     Type Player1's name" required="required">
+                <i>Player2:</i><input type="text" name="pl2" ng-model="pla2" placeholder="     Type Player2's name" required="required">
+
+        </div>
+        <div class="row3col2">
+                <center><p>{{pla1}} VS {{pla2}}</p></center>
+        </div>
+          <div class="row3col3">
+              <center><a href="main.html"><button>Play</button></a></center>
+          </div>
+      </div>
+
+
+</body>
+</html>

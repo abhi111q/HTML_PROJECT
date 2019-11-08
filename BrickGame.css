@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-image: url('background4.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #004d40;
+}
+
+canvas{
+    background: #fafafa;
+    display: block;
+    margin:0 auto;
+    opacity: 85%;
+    
+}
+img{
+    padding: 10px;
+}

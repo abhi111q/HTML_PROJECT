@@ -1,0 +1,163 @@
+  
+html,
+body {
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('tictac1.jpg');
+    background-size: cover;
+
+}
+
+
+#square1
+{
+    width: 2vw;
+    height: 4vh;
+    left: 0px;
+    top:0px;
+    text-align: center;
+    background-color: yellow;
+    font-size: 1.8vw;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: auto;
+    color: black;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  100% {left:0px; top:95%;}
+}
+
+#square2
+{
+    width: 2vw;
+    height: 4vh;
+    left: 2%;
+    top:0px;
+    text-align: center;
+    background-color: green;
+    font-size: 1.8vw;
+    position: relative;
+    animation-name: exampletwo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;  
+    padding: auto;
+    color: white;
+}
+
+@keyframes exampletwo {
+  0%   {left:2%; top:0px;}
+  100% {left:2%; top:87%;}
+}
+
+
+#square3
+{
+    width: 2vw;
+    height: 4vh;
+    left: 0px;
+    top:0px;
+    text-align: center;
+    background-color: yellow;
+    font-size: 1.8vw;
+    position: relative;
+    animation-name: examplethree;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: auto;
+    animation-delay: 2.35s;
+    color: black;
+}
+
+@keyframes examplethree {
+  0%   {left:0px; top:0px;}
+  100% {left:98.5%; top:0px;}
+}
+
+#square4
+{
+    width: 2vw;
+    height: 4vh;
+    left: 2%;
+    top:0px;
+    text-align: center;
+    background-color: green;
+    font-size: 1.8vw;
+    position: relative;
+    animation-name: examplefour;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    padding: auto;
+    animation-delay: 2.35s;
+    color: white;
+}
+
+
+@keyframes examplefour {
+  0%   {left:2%; top:0px;}
+  100% {left:96.5%; top:0px;}
+}
+
+
+
+
+
+
+.title {
+    font-size: 42px;
+    color: white;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.board {
+    max-width: 39vw;
+    margin:auto;
+    margin-bottom: 5vh;
+    background-color: gainsboro;
+}
+
+.square {
+    width: 12vw;
+    height: 18vh;
+    border: 0.5vw solid mediumslateblue;
+    font-size: 10vw;
+}
+
+
+.square:hover {
+    background: floralwhite;
+    cursor: pointer;
+}
+
+.winner {
+    display: none;
+    padding: 10px;
+    font-size: 32px;
+    color: royalblue;
+}
+
+.reset {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 28px;
+}
