@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ -->
+    <!-- style libraries -->
+    <link rel="stylesheet" href="css/main.css">
+
+    
+    <!-- Fontawesome cdn -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- script libraries -->
+    <script type="text/javascript" src="lib/angular.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/cards.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <title>Gamistry</title>
+</head>
+<body ng-app="homepage">
+    
+    <header>
+        
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <div class="logo">
+                <a href="main.html">
+                <p class="logo-text">Gamistry</p>
+            </a>
+            </div>
+
+            <ul class="nav-list" ng-controller="MenuController">
+                <li ng-repeat = "item in menuItems">
+                    <a class="scroll" href="{{item.link}}">{{item.name}}</a>
+                </li>
+            </ul>
+            
+           <button class="cta cta-btn" id="registerButton">
+            <a href="lib/register.html">Register</a>
+        </button>
+        </nav>
+    </header>
+
+    <main class="hero" id="jsHero">
+        <p class="hero-text">Play <span> games</span> like you never played before.</p>
+
+        <button class="cta hero-btn"><a class="scroll" href="#gameinfo">Get Started</a></button>
+        
+        <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </main>
+
+    <!-- Company introduction section -->
+
+    <section class="intro" id="intro">
+        
+        <div class="left-side">
+            <h1 class="heading left-align">What we do?</h1>
+            <p>This is the introduction of the company. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="right-side">
+            <div><img src="img/hero-img-min.jpg" alt="company's photo"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Games info section -->
+
+    <section class="info-section" id="gameinfo" ng-controller="MenuController">
+            <div class="info-text">
+                <p class="heading">Dive into the magical world of games.</p>
+            </div>
+            <div class="grid-system" >
+                <div class="game-cards">
+                    <!-- First game -->
+                    <div class="card" ng-repeat="item in gameItems" >
+                        <div class="card-img">
+                            <img src="{{item.img}}" alt="{{item.alt}}">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                <p>{{item.name}}</p>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                            <a href="{{item.link}}">Play now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="testimonial">
+        <p class="heading">What they say about us.</p>
+        <div class="container">
+            <div class="box">
+            <div class="img-box">
+                <img src="img/person1.jpeg">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <h4>Some famous person. <br><span>Creative Director</span></h4>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img src="img/person2.jpeg">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <h4>Some famous person. <br><span>Creative Director</span></h4>
+        </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h1 class="heading">Subscribe &amp; stay updated.</h1>
+        <form class="subscribeForm">
+            <input type="email" name="" placeholder="Enter your email">
+            <button class="cta" type="submit">Subscribe</button>
+        </form>
+
+        <div class="footer-container">
+            <div class="about">
+                <a class="logo" href="main.html">
+                    Gamistry
+                </a>
+                <p class="about-content">
+                    This is a little information about company. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="links">
+                <h3>Links</h3>
+                <ul ng-controller="MenuController">
+                    <li ng-repeat = "item in menuItems">
+                        <a href="{{item.link}}">{{item.name}}</a>
+                    </li>
+                </ul>  
+            </div>
+            <div class="contact">
+                <h3>Contact us at:</h3>
+                <p>facebook</p>
+                <p>twitter</p>
+                <p>instagram</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+            <p>&copy; Copyrights reserved. Designed with care and passion.</p>
+        </div>
+
+    
+</body>
+</html>
